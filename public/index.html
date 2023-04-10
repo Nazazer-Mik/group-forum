@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <script src = "scripts/redirector.js"></script>
+        <link rel = "stylesheet" href = "styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class = "left-side"></div>
+        <div class = "middle">
+            <h1>Welcome To PZ-21-2</h1>
+            <div class = "line"></div>
+            <div class = "wrapper">
+                <div class = "menu">
+                    <div class = "login">
+                        <a id = "login" onclick="ChangeScr('log_in', 'add')">login</a>
+                    </div>
+                    <div class = "register">
+                        <a id = "register" onclick="ChangeScr('registration', 'add')">register</a>
+                    </div>
+                </div>
+                <div class = "registration">
+                    <div class = "wrap">
+                        <div>
+                            <h3>Email:</h3>
+                            <input type = "text" maxlength = 200 id = "email" placeholder = "example000@mail.domen">
+                        </div>
+                        <div>
+                            <h3>Username:</h3>
+                            <input type = "text" maxlength = 200 id = "username" placeholder = "Richard">
+                        </div>
+                        <div>
+                            <h3>Password:</h3>
+                            <input type = "password" maxlength = 200 id = "pass1" placeholder = "1234567Aa">
+                        </div>
+                        <div>
+                            <h3>Repeat password:</h3>
+                            <input type = "password" maxlength = 200 id = "pass2" placeholder = "1234567Aa">
+                        </div>
+                        <div id = "err"></div>
+                        <a id = "back" onclick = "ChangeScr('registration', 'remove')">Back</a>
+                        <button id = "compltr" onclick = "SendReg()">Complete</button>
+                    </div>
+                </div>
+                <div class = "log_in">
+                    <div class = "wrap">
+                        <div>
+                            <h3>Email:</h3>
+                            <input type = "text" maxlength = 200 id = "lemail">
+                        </div>
+                        <div>
+                            <h3>Password:</h3>
+                            <input type = "password" maxlength = 200 id = "lpass">
+                        </div>
+                        <div id = "err1"></div>
+                        <a id = "back" onclick = "ChangeScr('log_in', 'remove')">Back</a>
+                        <button id = "compltr" onclick = "SendLog()">Login</button>
+                    </div>
+                </div>
+            </div>
+            <div class = "cl">console.log(...)</div>
+        </div>
+        <div class = "right-side">
+            <div id = "madeby">Made By Nazazer</div>
+        </div>
+        <script src = "scripts/script.js"></script>
+    </body>
+
+</html>
